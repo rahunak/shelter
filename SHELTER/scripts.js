@@ -1,11 +1,12 @@
-console.log("main script")
+
 
 document.querySelectorAll(".button-secondary").forEach(el => el.addEventListener("click", showModalWindow));
 
 function showModalWindow(event) {
     let name = event.currentTarget.previousElementSibling.textContent.toUpperCase();
     let petObj = info.find(el => el.h3.toUpperCase() === name);
-    Our_Friends.insertAdjacentHTML("afterbegin",
+    
+    document.querySelector("#Our_Friends").insertAdjacentHTML("afterbegin",
 `<div class="pet-modal">
 <div class="modal-window">
     <img src="${petObj.img}" alt="cat ${petObj.alt}" />
