@@ -34,7 +34,7 @@ function showModalWindow(event) {
 </div>
 
 <button class="modal-close-btn">
-    <img src="./assets/icons/close-button.svg" alt="press to close">
+    <img src="../assets/icons/close-button.svg" alt="press to close">
 </button>
 </div>`);
     document.querySelector(".modal-close-btn").addEventListener("click", hideModalWindow);
