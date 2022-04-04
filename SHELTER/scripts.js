@@ -9,7 +9,7 @@ function showModalWindow(event) {
     document.querySelector("#Our_Friends").insertAdjacentHTML("afterbegin",
 `<div class="pet-modal">
 <div class="modal-window">
-    <img src="${petObj.img}" alt="cat ${petObj.alt}" />
+    <img src="${petObj.img}" alt="${petObj.alt}" />
 
     <div class="modal-content">
         <h3>${petObj.h3}</h3>
