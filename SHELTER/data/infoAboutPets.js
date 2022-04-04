@@ -1,4 +1,4 @@
-console.log("pets script")
+
 let info=[{
     h3:"Charly",
     h4:"Dog - Jack Russell Terrier ",

@@ -1,4 +1,4 @@
-console.log("main script")
+
 
 document.querySelectorAll(".button-secondary").forEach(el => el.addEventListener("click", showModalWindow));
 
