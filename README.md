@@ -1,2 +1,1 @@
-# rahunak-JSFE2022Q1
-Private repository for @rahunak
+https://rolling-scopes-school.github.io/rahunak-JSFE2022Q1/SHELTER/
