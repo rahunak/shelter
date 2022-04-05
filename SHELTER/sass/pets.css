@@ -1,3 +1,287 @@
+.pet-modal .modal-close-btn {
+  border: 0;
+  font-family: "Georgia", sans-serif;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #292929;
+  /* color-dark-3xl */
+  background-color: #f1cdb3;
+  cursor: pointer;
+  height: 3.23rem;
+  font-weight: 400;
+  line-height: 130%;
+  /* identical to box height, or 22px */
+  border-radius: 6.25rem;
+}
+
+footer {
+  height: 350px;
+  width: 100vw;
+  border-radius: 0px;
+  background-image: url(../assets/images/footer-gradient-background.png), url(../assets/images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-content {
+  width: 1200px;
+  height: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-content .location {
+  width: 302px;
+}
+
+footer .footer-content .contacts,
+footer .footer-content .location {
+  height: 234px;
+  position: relative;
+  top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  justify-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-content .contacts h3,
+footer .footer-content .location h3 {
+  white-space: nowrap;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  /* color-light-xl */
+  text-align: left;
+}
+
+footer .footer-content .contacts .contact_item,
+footer .footer-content .location .contact_item {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+footer .footer-content .contacts .contact_item a,
+footer .footer-content .location .contact_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer .footer-content .contacts .contact_item a .icon,
+footer .footer-content .location .contact_item a .icon {
+  height: 32px;
+  width: 40px;
+  border-radius: 0px;
+  margin-right: 20px;
+}
+
+footer .footer-content .contacts .contact_item a .marker,
+footer .footer-content .location .contact_item a .marker {
+  height: 32px;
+  width: 22px;
+}
+
+footer .footer-content .contacts .contact_item a h4,
+footer .footer-content .location .contact_item a h4 {
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+}
+
+.pet-modal {
+  position: absolute;
+  width: 100vw;
+  height: 877px;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: rgba(41, 41, 41, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pet-modal .modal-close-btn {
+  width: 52px;
+  height: 52px;
+  position: relative;
+  top: -552px;
+  left: 471px;
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #f1cdb3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pet-modal .modal-window {
+  position: relative;
+  height: 500px;
+  width: 900px;
+  border-radius: 9px;
+  background: #fafafa;
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.pet-modal .modal-window img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 9px;
+}
+
+.pet-modal .modal-window .modal-content {
+  position: relative;
+  left: 30px;
+  top: 50px;
+  height: 362px;
+  width: 351px;
+  border-radius: 0px;
+}
+
+.pet-modal .modal-window .modal-content > h3 {
+  position: relative;
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.pet-modal .modal-window .modal-content > h4 {
+  margin-top: 10px;
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.pet-modal .modal-window .modal-content > h5 {
+  margin: 40px 0;
+  font-family: Georgia;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.pet-modal .modal-window .modal-content ul li {
+  color: #f1cdb3;
+  margin: 10px 0;
+}
+
+.pet-modal .modal-window .modal-content ul li h5 {
+  font-family: Georgia;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  white-space: nowrap;
+  color: #000000;
+}
+
+.pet-modal .modal-window .modal-content ul li h5 span {
+  font-family: Georgia;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #000000;
+}
+
 *,
 h1,
 h2,
@@ -333,288 +617,5 @@ main .content-pets .navigation h4 {
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0.06em;
-}
-
-.pet-modal .modal-close-btn {
-  border: 0;
-  font-family: "Georgia", sans-serif;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: #292929;
-  /* color-dark-3xl */
-  background-color: #f1cdb3;
-  cursor: pointer;
-  height: 3.23rem;
-  font-weight: 400;
-  line-height: 130%;
-  /* identical to box height, or 22px */
-  border-radius: 6.25rem;
-}
-
-footer {
-  height: 350px;
-  width: 100vw;
-  border-radius: 0px;
-  background-image: url(../assets/images/footer-gradient-background.png), url(../assets/images/footer-background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .footer-content {
-  width: 1200px;
-  height: 310px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-footer .footer-content .location {
-  width: 302px;
-}
-
-footer .footer-content .contacts,
-footer .footer-content .location {
-  height: 234px;
-  position: relative;
-  top: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  justify-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-footer .footer-content .contacts h3,
-footer .footer-content .location h3 {
-  white-space: nowrap;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  /* or 45px */
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  /* color-light-xl */
-  text-align: left;
-}
-
-footer .footer-content .contacts .contact_item,
-footer .footer-content .location .contact_item {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-footer .footer-content .contacts .contact_item a,
-footer .footer-content .location .contact_item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-footer .footer-content .contacts .contact_item a .icon,
-footer .footer-content .location .contact_item a .icon {
-  height: 32px;
-  width: 40px;
-  border-radius: 0px;
-  margin-right: 20px;
-}
-
-footer .footer-content .contacts .contact_item a .marker,
-footer .footer-content .location .contact_item a .marker {
-  height: 32px;
-  width: 22px;
-}
-
-footer .footer-content .contacts .contact_item a h4,
-footer .footer-content .location .contact_item a h4 {
-  font-family: Georgia;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0.06em;
-  color: #f1cdb3;
-}
-
-.pet-modal {
-  position: absolute;
-  width: 100vw;
-  height: 877px;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  background: rgba(41, 41, 41, 0.6);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.pet-modal .modal-close-btn {
-  width: 52px;
-  height: 52px;
-  position: relative;
-  top: -552px;
-  left: 471px;
-  color: #000000;
-  background-color: transparent;
-  border: 2px solid #f1cdb3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pet-modal .modal-window {
-  position: relative;
-  height: 500px;
-  width: 900px;
-  border-radius: 9px;
-  background: #fafafa;
-  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.pet-modal .modal-window img {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 500px;
-  height: 500px;
-}
-
-.pet-modal .modal-window .modal-content {
-  position: relative;
-  left: 30px;
-  top: 50px;
-  height: 362px;
-  width: 351px;
-  border-radius: 0px;
-}
-
-.pet-modal .modal-window .modal-content > h3 {
-  position: relative;
-  font-family: Georgia;
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: 0.06em;
-  text-align: left;
-}
-
-.pet-modal .modal-window .modal-content > h4 {
-  margin-top: 10px;
-  font-family: Georgia;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0.06em;
-  text-align: left;
-}
-
-.pet-modal .modal-window .modal-content > h5 {
-  margin: 40px 0;
-  font-family: Georgia;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0.06em;
-  text-align: left;
-}
-
-.pet-modal .modal-window .modal-content ul li {
-  color: #f1cdb3;
-  margin: 10px 0;
-}
-
-.pet-modal .modal-window .modal-content ul li h5 {
-  font-family: Georgia;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 0.06em;
-  text-align: left;
-  white-space: nowrap;
-  color: #000000;
-}
-
-.pet-modal .modal-window .modal-content ul li h5 span {
-  font-family: Georgia;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0.06em;
-  text-align: left;
-  color: #000000;
 }
 /*# sourceMappingURL=pets.css.map */

@@ -228,6 +228,7 @@ footer .footer-content .location .contact_item a h4 {
   left: 0;
   width: 500px;
   height: 500px;
+  border-radius: 9px;
 }
 
 .pet-modal .modal-window .modal-content {
