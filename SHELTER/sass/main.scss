@@ -1,4 +1,8 @@
-$font-family: Georgia;
+@import "_fonts.scss";
+@import "_buttonPrimary";
+@import "_footer";
+@import "_modal";
+$font-family: Georgia,"Verdana",sans-serif;
 
 *,
 *::after,
@@ -28,6 +32,7 @@ body {
   left: 0;
   top: 0;
   border-radius: 0px;
+
 }
 
 .button_primary {
@@ -66,7 +71,7 @@ main {
     .logo {
       h1 {
         color: #f1cdb3;
-        font-family: Georgia, sans-serif;
+        font-family: Georgia,Verdana, sans-serif;
         font-size: 32px;
         font-weight: 400;
         margin: 0;
@@ -74,7 +79,7 @@ main {
         letter-spacing: 0.06em;
       }
       p {
-        font-family: Arial, sans-serif;
+        font-family: Arial,Verdana, sans-serif;
         font-size: 13px;
         font-weight: 400;
         margin: 0;
@@ -94,7 +99,7 @@ main {
           display: inline;
           margin-right: 32px;
           a {
-            font-family: Arial, sans-serif;
+            font-family: Arial,Verdana, sans-serif;
             font-size: 15px;
             line-height: 160%;
             font-weight: 400;
@@ -139,14 +144,14 @@ main {
         width: 310px;
         height: 114px;
         font-size: 2.75rem;
-        font-family: Georgia, sans-serif;
+        font-family: Georgia,Verdana, sans-serif;
         font-weight: 400;
         line-height: 130%;
         margin-bottom: 2.625rem;
         color: #ffffff;
       }
       p {
-        font-family: Arial, sans-serif;
+        font-family: Arial,Verdana, sans-serif;
         font-weight: 400;
         font-size: 0.9375rem;
         line-height: 1.5rem;
@@ -184,7 +189,7 @@ main {
       h3 {
         display: block;
         width: 23.125rem;
-        font-family: Georgia;
+        font-family: Georgia,Verdana,sans-serif;
         font-size: 2.1875rem;
         font-style: normal;
         font-weight: 400;
@@ -196,7 +201,7 @@ main {
       }
       p {
         //styleName: paragraph-l;
-        font-family: Arial, sans-serif;
+        font-family: Arial,Verdana, sans-serif;
         font-size: 0.9375rem;
         font-style: normal;
         font-weight: 400;
@@ -225,7 +230,7 @@ main {
       display: block;
       width: 25rem;
       height: 5.625rem;
-      font-family: Georgia;
+      font-family: Georgia,Verdana,sans-serif;
       font-size: 2.1875rem;
       font-style: normal;
       font-weight: 400;
@@ -291,7 +296,7 @@ main {
         }
       }
       p {
-        font-family: Georgia;
+        font-family: Georgia,Verdana,sans-serif;
         font-size: 1.25rem;
         font-weight: 400;
         line-height: 1.375rem;
@@ -309,7 +314,7 @@ main {
         background-color: #ffffff;
         border-radius: 100px;
         cursor: pointer;
-        font-family: Georgia;
+        font-family: Georgia,Verdana,sans-serif;
         font-size: 1.0625rem;
         font-weight: 400;
         line-height: 1.375rem;
@@ -332,7 +337,7 @@ main {
     height: 431px;
     h3 {
       //styleName: h3;
-      font-family: Georgia;
+      font-family: Georgia,Verdana,sans-serif;
       font-size: 35px;
       font-weight: 400;
       line-height: 45px;
@@ -361,7 +366,7 @@ main {
           margin: 0 auto 1.875rem auto;
         }
         h4 {
-          font-family: "Georgia";
+          font-family: "Georgia",Verdana,sans-serif;
           font-size: 1.25rem;
           font-weight: 400;
           line-height: 1.4375rem;
@@ -394,7 +399,7 @@ main {
     }
     .donation-text {
       h3 {
-        font-family: "Georgia";
+        font-family: "Georgia",Verdana,sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 35px;
@@ -406,7 +411,7 @@ main {
         padding-bottom: 20px;
       }
       h5 {
-        font-family: "Georgia";
+        font-family: "Georgia",Verdana,sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -437,7 +442,7 @@ main {
           flex-direction: row;
           justify-content: center;
           h4 {
-            font-family: "Georgia";
+            font-family: "Georgia",Verdana,sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
@@ -455,7 +460,7 @@ main {
         }
       }
       p {
-        font-family: "Arial";
+        font-family: "Arial",Verdana,sans-serif;
         font-style: italic;
         font-weight: 400;
         font-size: 12px;
@@ -467,6 +472,4 @@ main {
     }
   }
 }
-@import "_buttonPrimary";
-@import "_footer";
-@import "_modal";
+
