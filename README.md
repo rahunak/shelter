@@ -1,7 +1,7 @@
 # rahunak-JSFE2022Q1
 Private repository for @rahunak
 
-##[Зайко Евгений Иванович]
+## Зайко Евгений Иванович
 
 [Linkedin](https://www.linkedin.com/in/rahunak/)
 
