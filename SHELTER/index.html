@@ -2,28 +2,26 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/normalize.css/normalize.css">
-
-    <link rel="stylesheet" href="../sass/buttons.css">
-    <link rel="stylesheet" href="../sass/aboutShelter.css">
-    <link rel="stylesheet" href="../sass/startScreen.css">
-    <link rel="stylesheet" href="../sass/ourFriends.css">
-    <link rel="stylesheet" href="../sass/header.css">
-    <link rel="stylesheet" href="../sass/help.css">
-    <link rel="stylesheet" href="../sass/footer.css">
-    <link rel="stylesheet" href="../sass/header.css">
-    <link rel="stylesheet" href="../sass/main.css">
-    <link rel="stylesheet" href="../sass/donation.css">
+    <link rel="stylesheet" href="../sass/css/buttons.css">
+    <link rel="stylesheet" href="../sass/css/main.css">
+    <link rel="stylesheet" href="../sass/css/header.css">
+    <link rel="stylesheet" href="../sass/css/startScreen.css">
+    <link rel="stylesheet" href="../sass/css/aboutShelter.css">
+    <link rel="stylesheet" href="../sass/css/ourFriends.css">
+    <link rel="stylesheet" href="../sass/css/help.css">
+    <link rel="stylesheet" href="../sass/css/donation.css">
+    <link rel="stylesheet" href="../sass/css/footer.css">
     <title>
         Shelter
     </title>
 </head>
-
 <body>
-    <main id="startScreen" class="main">
+    <main id="startScreen" class="startScreen">
         <div class="wrapper startScreen__wrapper">
             <header class="header">
-                <div class="header__wrapper">
+                <div class="header__wrapper startScreen__header_wrapper">
                     <div class="logo">
                         <a href="./index.html" class="logo__link ">
                             <h1 class="logo__h1">Cozy House</h1>
@@ -32,10 +30,12 @@
                     </div>
                     <nav class="header__navigation">
                         <ul class="navigation">
-                            <li class="navigation__li"><a href="#about"
-                                    class="navigation__link navigation__link_active">About
-                                    the shelter</a></li>
-                            <li class="navigation__li"><a href="./pages/pets/index.html" class="navigation__link">Our
+                            <li class="navigation__li">
+                                <a href="#about" class="navigation__link navigation__link_active">About
+                                    the shelter
+                                </a>
+                                </li>
+                            <li class="navigation__li"><a href="/pages/pets/pets.html" class="navigation__link">Our
                                     pets</a>
                             </li>
                             <li class="navigation__li"><a href="#help" class="navigation__link">Help the shelter</a>
@@ -53,7 +53,7 @@
                         He or
                         she
                         will love you more than anybody else in the world, you will see!</p>
-                    <a class="startScreen__button content__link link" href="#Our-Friends">Make a friend</a>
+                    <a class="startScreen__button content__link link" href="#Our_Friends">Make a friend</a>
                 </div>
                 <img src="./assets/images/start-screen-puppy.png" class="content__mainImage" alt=""
                     title="we love pets">
@@ -112,9 +112,7 @@
                     <div class="buttonArrow buttonArrow_right">
                         <img src="./assets/icons/button_left_arrow.svg" alt="click for slide to right" />
                     </div>
-
                 </div>
-
                 <a class="button__primary link friends__button" href="./pages/pets/index.html">Get to know the rest</a>
             </div>
         </div>
@@ -172,12 +170,14 @@
                 <div class="donation__description">
                     <h3 class="content__h3_left donation__h3">You can also<br />make a donation</h3>
                     <h5 class="content__h5">Name of the bank / Type of bank account</h5>
-                    <div class="cashCard">
-                        <a href="" class="cashCard__link link">
+
+                    <a href="" class="  cashCard__link link">
+                        <figure class="cashCard">
                             <img src="../assets/icons/credit-card.svg" class="cashCard__image" alt="">
                             <h4 class="cashCard__h4 content__h4">8380 2880 8028 8791 7435</h4>
-                        </a>
-                    </div>
+                        </figure>
+                    </a>
+
                     <p class="content__p donation__p">Legal information and lorem ipsum dolor sit amet,consectetur
                         adipiscing elit.
                         Maecenas a ipsum at libero sagittis dignissim sed ac diam.
@@ -190,46 +190,39 @@
         </div>
     </div>
     <footer id="footer" class="footer">
-        <div class="wrapper footer__wrapper">
+        <div class="wrapper wrapper__footer">
             <div class="footer__content">
-                <div class="infoBlock">
-                    <div class="infoBlock__item">
-                        <h3 class="content__h3_left infoBlock_h3">For questions<br />and suggestions</h3>
-                        <a href="mailto:email@shelter.com" class="link infoBlock__link">
-                            <img src="./assets/icons/mail.svg" class="ico_mail" alt="our email email@shelter.com">
-                            <h4 class="content__h4 ">email@shelter.com</h4>
-                        </a>
-                        <a href="tel:+136745677554" class="link infoBlock__link">
-                            <img src="./assets/icons/phone.svg" class="ico_phone" alt="call to us +13 674 567 75 54">
-                            <h4 class="content__h4 ">+13 674 567 75 54</h4>
-                        </a>
-                    </div>
 
-
-
+                <div class="infoBlock contacts">
+                    <h3 class="content__h3_left infoBlock_h3">For questions<br />and suggestions</h3>
+                    <a href="mailto:email@shelter.com" class="link infoBlock__link">
+                        <img src="/assets/icons/mail.svg" class="ico_mail" alt="our email email@shelter.com">
+                        <h4 class="content__h4 ">email@shelter.com</h4>
+                    </a>
+                    <a href="tel:+136745677554" class="link infoBlock__link">
+                        <img src="/assets/icons/phone.svg" class="ico_phone" alt="call to us +13 674 567 75 54">
+                        <h4 class="content__h4 ">+13 674 567 75 54</h4>
+                    </a>
                 </div>
-                <div class="infoBlock">
-                    <div class="infoBlock__item">
-                        <h3 class="content__h3_left infoBlock_h3">We are waiting<br /> for your visit</h3>
-                        <a href="https://goo.gl/maps/HUw2XX7RpXEa7oyk9" target="_blank" class="link infoBlock__link">
-                            <img src="./assets/icons/pin.svg" class="ico_marker" alt="our email email@shelter.com">
-                            <h4 class="content__h4 "> 1 Central Street, Boston<br /> (entrance from the store)</h4>
-                        </a>
-                        <a href="https://goo.gl/maps/dWjkTDnVYdb5ytEK7" target="_blank" class="link infoBlock__link">
-                            <img src="./assets/icons/pin.svg" class="ico_marker" alt="call to us +13 674 567 75 54">
-                            <h4 class="content__h4 "> 18 South Park, London </h4>
-                        </a>
-                    </div>
-
-
-
+                <div class="infoBlock location">
+                    <h3 class="content__h3_left infoBlock_h3">We are waiting<br /> for your visit</h3>
+                    <a href="https://goo.gl/maps/HUw2XX7RpXEa7oyk9" target="_blank" class="link infoBlock__link">
+                        <img src="/assets/icons/pin.svg" class="ico_marker" alt="our email email@shelter.com">
+                        <h4 class="content__h4 "> 1 Central Street, Boston<br /> (entrance from the store)</h4>
+                    </a>
+                    <a href="https://goo.gl/maps/dWjkTDnVYdb5ytEK7" target="_blank" class="link infoBlock__link">
+                        <img src="/assets/icons/pin.svg" class="ico_marker" alt="call to us +13 674 567 75 54">
+                        <h4 class="content__h4 "> 18 South Park, London </h4>
+                    </a>
                 </div>
-                <img src="./assets/images/footer-puppy.png" alt="" class="footer__img">
+
+                <img src="/assets/images/footer-puppy.png" alt="" class="footer__img">
             </div>
         </div>
     </footer>
     <script src="scripts.js"></script>
     <script async src="./data/infoAboutPets.js"></script>
+
 </body>
 
 </html>
