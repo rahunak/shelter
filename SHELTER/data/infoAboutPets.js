@@ -1,4 +1,4 @@
-console.log("pets script")
+console.log("данные для pets подключены")
 let info=[{
     h3:"Charly",
     h4:"Dog - Jack Russell Terrier ",
