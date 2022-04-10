@@ -1,0 +1,58 @@
+.footer {
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__wrapper {
+    position: relative;
+    bottom: 0;
+    top: 0.1rem;
+    // width: 128rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(/assets/images/footer-gradient-background.png), url(/assets/images/footer-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer__content {
+    height: 31rem;
+    width: 120rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.infoBlock {
+    position: relative;
+    top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.contacts {
+        row-gap: 4.3rem;
+    }
+    &.location {
+        width: 30.2rem;//Может лучше убрать ширину блока...Нигде больше не задано
+        row-gap: 3.3rem;
+    }
+}
+.infoBlock__link {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    color: rgba(241, 205, 179, 1);
+}
+.infoBlock_h3 {
+    color: #ffffff;
+}
+.footer__img {
+    position: relative;
+    left: -0.1rem;
+    height: 31rem;
+    width: 30rem;
+    max-width: 30rem;
+    max-height: 31rem;
+}

@@ -1,0 +1,70 @@
+$Georgia: Georgia, Verdana, sans-serif;
+$Arial: Arial, Verdana, sans-serif;
+.donation {
+    height: 46.2rem;
+    width: 100%;
+}
+.donation__wrapper {
+    position: relative;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donation__content {
+    height: 28.2rem;
+    width: 91.5rem;
+    display: flex;
+    position: relative;
+    top: -9px;
+    left: -1px;//свойство то надо то не надо!!!!(+/-1px)
+    justify-content: space-between;
+    align-items: center;
+}
+.donation__image {
+    height: 26.1rem;
+    width: 50.5rem;
+    max-width: 50.5rem;
+    max-height: 26.1rem;
+}
+.donation__description {
+    height: 28.2rem;
+    width: 38rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cashCard {
+    background: #f1cdb3;
+    border-radius: 0.9rem;
+    width: 34.9rem;
+    height: 4.3rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    // background-color: red;
+}
+// .cashCard__link { }
+.cashCard__image {
+    padding-right:1.5rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+.cashCard__h4 {
+    color: rgba(84, 84, 84, 1);
+}
+.donation__p {
+    font-family: $Arial;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.donation__h3 {
+    color: rgba(84, 84, 84, 1);
+}

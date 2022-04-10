@@ -1,0 +1,49 @@
+$Georgia: Georgia, Verdana, sans-serif;
+@media (min-width: 768px) and (max-width: 1280px) {
+     @import "header";
+     @import "mainPets";
+
+     .footer {
+          display: none;
+     }
+     .header {
+          min-height: 12rem;
+          min-width: 76.8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     .petsHeader__wrapper {
+          height: 6rem;
+          width: 70.8rem;
+     }
+
+     /*friendsPetsPage*/
+
+     .friendsPetsPage {
+          min-height: 173.3rem;
+          min-width: 76.8rem;
+     }
+.friendsPetsPage__wrapper{
+     width: 100%;
+     height: 100%;
+}
+     .friendsPetsPage__content {
+          left:2px;
+         top:1.6rem;
+          height: 160.3rem;
+          width: 70.8rem;
+          align-items: center;
+          
+     }
+.petsContainer{
+     left: -1px;
+     width: 58rem;
+     height: 136.5rem;
+     overflow: hidden;
+     column-gap: 4rem;
+     position: relative;
+     top:-1.9rem;
+}
+
+}
