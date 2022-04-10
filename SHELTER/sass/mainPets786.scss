@@ -1,11 +1,9 @@
 $Georgia: Georgia, Verdana, sans-serif;
-@media (min-width: 768px) and (max-width: 1280px) {
-     @import "header";
-     @import "mainPets";
+// @import "header";
 
-     .footer {
-          display: none;
-     }
+@media (min-width: 768px) and (max-width: 1280px) {
+@import "footer";
+@import "main768";
      .header {
           min-height: 12rem;
           min-width: 76.8rem;
@@ -23,27 +21,62 @@ $Georgia: Georgia, Verdana, sans-serif;
      .friendsPetsPage {
           min-height: 173.3rem;
           min-width: 76.8rem;
+          justify-content: center;
+          align-items: flex-start;
      }
-.friendsPetsPage__wrapper{
-     width: 100%;
-     height: 100%;
-}
+     .friendsPetsPage__wrapper {
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: flex-start;
+     }
      .friendsPetsPage__content {
-          left:2px;
-         top:1.6rem;
-          height: 160.3rem;
+          left: 1px;
+          margin-top: 9rem;
+          height: 157.3rem;
           width: 70.8rem;
           align-items: center;
-          
      }
-.petsContainer{
-     left: -1px;
-     width: 58rem;
-     height: 136.5rem;
-     overflow: hidden;
-     column-gap: 4rem;
-     position: relative;
-     top:-1.9rem;
-}
+     .petsSlider {
+          position: relative;
+          left: -1px;
+          top: -0.3rem;
+          width: 58rem;
+          height: 136.5rem;
+          column-gap: 4rem;
+          overflow: hidden;
+     }
+     .pagination {
+          position: relative;
+          top: 3px;
+          left: 0;
+     }
+     /*  footer  */
+//      .footer {
+//           min-height: 63.9rem;
+//           min-width: 76.8rem;
+// background-color: deeppink;
+//       }
+//       .footer__wrapper {
+//           align-items: flex-start;
+//           background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+
+//      }
+//       .footer__content {
+//           height: 23.4rem;
+//           width: 70.8rem;
+//           position: relative;
+//           top: 3rem;
+//           justify-content: center;
+//           column-gap: 6rem;
+//       }
+//       .footer__img {
+//           position: absolute;
+//           left: 20.3rem;
+//           top: 29.9rem;
+//       }
+//       .infoBlock {
+//           top: 0;
+//       }
 
 }
