@@ -10,7 +10,7 @@ body {
   height: 100vh;
   position: fixed;
   z-index: 1;
-  background: rgba(41, 41, 41, 0.6);
+  background: rgba(41, 41, 41, 0.692);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   top: -55.2rem;
   left: 47.1rem;
   color: #000000;
-  background-color: #B2B2B2;
+  background-color: #757575;
   border: 0.2rem solid #f1cdb3;
   border-radius: 100%;
   display: flex;
@@ -116,3 +116,61 @@ body {
     color: #000000;
   }
 }
+@media  (min-width: 768px)
+ and (max-width: 1279px) {
+
+
+ /* modalWindow */
+ .modalWindow__wrapper {
+  height: 35rem;
+  width: 63rem;
+}
+.modalWindow__img {
+  width: 35rem;
+  height: 35rem;
+}
+.modalWindow__description {
+  margin: 1rem 0.9rem 0 1.1rem;
+}
+.modalWindow__h5 {
+  margin: 2rem 0;
+  font-family: $Georgia;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 0.06em;
+  text-align: left;
+  word-wrap: break-word;
+}
+.modalWindow__h5_bold {
+  font-family: $Georgia;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  letter-spacing: 0.13em;
+  text-align: left;
+  & span {
+      //styleName: h5;
+      font-family: $Georgia;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.7rem;
+      letter-spacing: 0.06em;
+      text-align: left;
+  }
+}
+.modalWindow__ul {
+  top: 0;
+  left:1.4rem;
+}
+.modalWindow__li {
+  margin-bottom: 0.6rem;
+}
+.modalWindow__btn_close{
+top:-40.2rem;
+left:33.2rem;
+}
+
+
+
+ }

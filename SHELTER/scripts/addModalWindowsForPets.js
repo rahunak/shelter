@@ -42,7 +42,7 @@ function showModalWindow(event) {
 </div>
 
 <button class="modalWindow__btn_close">
-    <img src="/assets/icons/close-button.svg" alt="press to close">
+    <img src="/SHELTER/assets/icons/close-button.svg" alt="press to close">
 </button>
 </div>
 `);
