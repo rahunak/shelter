@@ -1,3 +1,4 @@
+
 console.log("данные для pets подключены")
 let info=[
     {
