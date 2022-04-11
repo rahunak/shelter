@@ -3,7 +3,7 @@
 Private repository for @rahunak
 
 ## Зайко Евгений Иванович
-Contacts:[Linkedin](https://www.linkedin.com/in/rahunak/) , [Github](https://github.com/rahunak)
+Contacts: [Linkedin](https://www.linkedin.com/in/rahunak/) , [Github](https://github.com/rahunak)
 
 
 1. [Task](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream1/shelter/README.md#%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F-1)
