@@ -32,6 +32,21 @@ $Arial: Arial, Verdana, sans-serif;
     color: #292929;
     width: 20.3rem;
     height: 4.8rem;
+    &:hover{
+        background-color: #FDDCC4;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+.ourFriends__button {
+    @extend %button__primary-shared;
+    height: 4.8rem;
+    width: 25.7rem;
+    border-radius: 100px;
+    &:hover{
+        background-color: #FDDCC4;
+        border: 2px solid #FDDCC4;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
 }
 .buttonArrow {
     border: 2px solid rgba(241, 205, 179, 1);
@@ -44,6 +59,7 @@ $Arial: Arial, Verdana, sans-serif;
     cursor: pointer;
     &:hover {
         background-color: rgba(241, 205, 179, 1);
+        
     }
     & img {
         height: 6px;
@@ -51,7 +67,9 @@ $Arial: Arial, Verdana, sans-serif;
         cursor: pointer;
     }
 }
-
+.slider__control_right {
+    transform: scale(-1, 1);
+}
 .pagination {
     display: flex;
     justify-content: center;
