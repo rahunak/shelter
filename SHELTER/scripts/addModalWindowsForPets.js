@@ -5,10 +5,11 @@ import "../sass/modal"
 
 console.log("скрипт модалек подключен")
 
-document.querySelectorAll(".petsContainer__btn").forEach(el => el.addEventListener("click", showModalWindow));
+document.querySelectorAll(".petsSlider__btn").forEach(el => el.addEventListener("click", showModalWindow));
 document.querySelectorAll(".card__button").forEach(el => el.addEventListener("click", showModalWindow));
 
 function showModalWindow(event) {
+
     let name = event.currentTarget.previousElementSibling.textContent.toUpperCase();
     let petObj = info.find(el => el.name.toUpperCase() === name);
     let modal = document.createElement("div");
@@ -46,19 +47,19 @@ function showModalWindow(event) {
 </div>
 `);
     document.body.prepend(modal);
-    document.querySelector(".modalWindow").addEventListener("click", clickLACK);
+    document.querySelector(".modalWindow").addEventListener("click", hideModalSecondMethod);
     document.querySelector(".modalWindow__btn_close").addEventListener("click", hideModalWindow);
 }
 
 function hideModalWindow() {
     document.querySelector(".modalWindow").remove();
 }
-function clickLACK(event) {
-    console.log("mouseClick ", event.clientX, "Y", event.clientY)
+function hideModalSecondMethod(event) {
+
     let modal= document.querySelector(".modalWindow__wrapper");
     if(!modal)return;
     let coordsModal=modal.getBoundingClientRect();
-    console.log("coords",coordsModal)
+
     if(event.clientX<coordsModal.left || event.clientX>coordsModal.right 
         || event.clientY<coordsModal.top || event.clientY>coordsModal.bottom) hideModalWindow();
 }

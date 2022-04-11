@@ -3,11 +3,11 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/icons/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/normalize.css/normalize.css">
-    <link rel="stylesheet" href="./sass/css/mainPets.css">
-    <link rel="stylesheet" href="./sass/css/modal.css"> 
-    <link rel="stylesheet" href="./sass/css/mainPets786.css">
+    <link rel="shortcut icon" href="../assets/icons/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../../sass/css/mainPets.css">
+    <link rel="stylesheet" href="../../sass/css/modal.css"> 
+    <link rel="stylesheet" href="../../sass/css/mainPets786.css">
     
     <title>
         Our Pets
@@ -17,7 +17,7 @@
     <header class="header">
         <div class="header__wrapper petsHeader__wrapper">
             <div class="logo">
-                <a href="/index.html" class="logo__link ">
+                <a href="../../index.html" class="logo__link ">
                     <h1 class="logo__h1">Cozy House</h1>
                     <p class="logo__p">Shelter for pets in Boston</p>
                 </a>
@@ -25,17 +25,17 @@
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__li">
-                        <a href="/index.html" class="navigation__link ">
+                        <a href="../../index.html" class="navigation__link ">
                             About the shelter
                         </a>
                     </li>
                     <li class="navigation__li">
-                        <a href="/pages/pets/pets.html" class="navigation__link navigation__link_active">
+                        <a href="../../pages/pets/pets.html" class="navigation__link navigation__link_active">
                             Our pets
                         </a>
                     </li>
                     <li class="navigation__li">
-                        <a href="/index.html#help" class="navigation__link">
+                        <a href="../../index.html#help" class="navigation__link">
                             Help the shelter
                         </a>
                     </li>
@@ -154,9 +154,11 @@
         </div>
     </footer>
     <!-- сделать ленивую подгрузку -->
-    <script async src="/scripts/addModalWindowsForPets.js"></script>
-    <script async src="/data/infoAboutPets.js"></script>
-
+    <script async src="../../scripts/addModalWindowsForPets.js"></script>
+    <script async src="../../data/infoAboutPets.js"></script>
+<script>
+    navigator.getBattery().then((battery)=>{console.log("+++",battery)})
+</script>
 </body>
 
 </html>
