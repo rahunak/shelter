@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # rahunak-JSFE2022Q1
 Private repository for @rahunak
 
@@ -9,6 +9,3 @@ Private repository for @rahunak
 [Github](https://github.com/rahunak)
 
 [Shelter](https://rolling-scopes-school.github.io/rahunak-JSFE2022Q1/SHELTER/)
-=======
-https://rolling-scopes-school.github.io/rahunak-JSFE2022Q1/SHELTER/
->>>>>>> origin/gh-pages
