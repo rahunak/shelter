@@ -75,6 +75,11 @@ $color-primary: #f1cdb3;
     &:hover{
         color:#FAFAFA;
     }
+    &:active{
+        @extend .navigation__link;
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid $color-primary;
+    }
 }
 // .navigation__link_p{}
 .navigation__link_active {
