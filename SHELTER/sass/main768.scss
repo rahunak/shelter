@@ -20,6 +20,10 @@ $Georgia: Georgia, Verdana, sans-serif;
         margin-top: 7rem;
         padding: 0;
     }
+    .startScreen__h2{
+        top:1px;
+        left: 134px;
+    }
     .startScreen__header {
         height: 6rem;
         width: 70.8rem;
@@ -93,9 +97,11 @@ $Georgia: Georgia, Verdana, sans-serif;
         width: 63rem;
     }
     .list {
-        column-gap: 6rem;
+        column-gap:6rem;
+        
     }
     .list__item {
+
         height: 11.3rem;
         width: 17rem;
     }
