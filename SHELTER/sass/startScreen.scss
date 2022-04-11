@@ -1,0 +1,72 @@
+.startScreen {
+    background-image: url(/assets/images/start-screen-gradient-background.png),
+        url(/assets/images/start-screen-background.jpg);
+    background-color: #5c5656;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90.8rem;
+    border-radius: 0px;
+    position: relative;
+}
+.startScreen__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.startScreen__header_wrapper{
+    position: relative;
+    top:30px;
+}
+.startScreen__content {
+    position: relative;
+    left: -1px;
+    width: 120rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.startScreen__description {
+    position: relative;
+    top: -40px;
+    left: 0;
+    height: 32.2rem;
+    width: 46.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.content__h2 {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%; /* or 57px */
+    display: flex;
+    align-items: center;
+    color: #ffffff; /* color-light-xl */
+}
+.content__p {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%; /* or 24px */
+    display: flex;
+    align-items: center;
+    color: #cdcdcd; /* color-dark-s */
+}
+.content__link {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%; /* identical to box height, or 22px */
+    letter-spacing: 0.06em;
+    color: #292929; /* color-dark-3xl */
+}
+.startScreen__mainImage {
+    max-width: 100%;
+    max-height: 100%;
+}
