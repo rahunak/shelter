@@ -1,6 +1,8 @@
+$Georgia: Georgia, Verdana, sans-serif;
+$Arial: Arial, Verdana, sans-serif;
 .startScreen {
-    background-image: url(/SHELTER/assets/images/start-screen-gradient-background.png),
-        url(/SHELTER/assets/images/start-screen-background.jpg);
+    background-image: url(/rahunak-JSFE2022Q1/SHELTER/assets/images/start-screen-gradient-background.png),
+        url(/rahunak-JSFE2022Q1/SHELTER/assets/images/start-screen-background.jpg);
     background-color: #5c5656;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +40,7 @@
     justify-content: space-between;
 }
 .content__h2 {
-    font-family: "Georgia";
+    font-family: $Georgia;
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
@@ -48,7 +50,7 @@
     color: #ffffff; /* color-light-xl */
 }
 .content__p {
-    font-family: "Arial";
+    font-family: $Arial;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -58,7 +60,7 @@
     color: #cdcdcd; /* color-dark-s */
 }
 .content__link {
-    font-family: "Georgia";
+    font-family: $Georgia;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
