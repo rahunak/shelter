@@ -8,8 +8,8 @@ Contacts: [Linkedin](https://www.linkedin.com/in/rahunak/) , [Github](https://gi
 
 1. [Task](https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream1/shelter/README.md#%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F-1)
 2. Screenshot:
-   [mainPage](![SHELTER_](https://user-images.githubusercontent.com/31304532/162741408-88a0013a-86e8-4283-9dde-aabc00398272.png))
-   [petsPage](![SHELTER_pages_pets_pets html](https://user-images.githubusercontent.com/31304532/162741446-4a2401f7-30fb-49f3-b4bd-a23a89e62e32.png))
+   [mainPage](https://user-images.githubusercontent.com/31304532/162741408-88a0013a-86e8-4283-9dde-aabc00398272.png)
+   [petsPage](https://user-images.githubusercontent.com/31304532/162741446-4a2401f7-30fb-49f3-b4bd-a23a89e62e32.png)
 3. Deploy: https://rolling-scopes-school.github.io/rahunak-JSFE2022Q1/SHELTER
 4. Done 11.04.2022 / deadline 12.04.2022
 5. Score: 100 / 100
