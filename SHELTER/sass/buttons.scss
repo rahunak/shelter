@@ -53,8 +53,8 @@ $Arial: Arial, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
-    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
     border-radius: 100px;
     cursor: pointer;
     &:hover {
