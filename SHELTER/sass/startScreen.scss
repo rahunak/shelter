@@ -10,10 +10,10 @@ $Arial: Arial, Verdana, sans-serif;
     border-radius: 0px;
     position: relative;
 }
-#burger__toggle{
+#burger__toggle {
     display: none;
 }
-.startScreen__wrapper{
+.startScreen__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,12 +30,16 @@ $Arial: Arial, Verdana, sans-serif;
 }
 .startScreen__description {
     position: relative;
-    top: -40px;
+    top: -4rem;
     left: 0;
-    height: 32.2rem;
-    width: 46.1rem;
+    @media (min-width: 768px) {
+        height: 32.2rem;
+        width: 46.1rem;
+    }
+
     display: flex;
     flex-direction: column;
+    row-gap: 4.2rem;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -43,7 +47,7 @@ $Arial: Arial, Verdana, sans-serif;
     font-family: $Georgia;
     font-style: normal;
     font-weight: 400;
-    font-size: 44px;
+    font-size: 4.4rem;
     line-height: 130%; /* or 57px */
     display: flex;
     align-items: center;
@@ -53,7 +57,7 @@ $Arial: Arial, Verdana, sans-serif;
     font-family: $Arial;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 160%; /* or 24px */
     display: flex;
     align-items: center;
@@ -63,7 +67,7 @@ $Arial: Arial, Verdana, sans-serif;
     font-family: $Georgia;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 130%; /* identical to box height, or 22px */
     letter-spacing: 0.06em;
     color: #292929; /* color-dark-3xl */
