@@ -10,16 +10,16 @@ $Arial: Arial, Verdana, sans-serif;
     border-radius: 0px;
     position: relative;
 }
+#burger__toggle{
+    display: none;
+}
 .startScreen__wrapper{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.startScreen__header_wrapper{
-    position: relative;
-    top:30px;
-}
+
 .startScreen__content {
     position: relative;
     left: -1px;
