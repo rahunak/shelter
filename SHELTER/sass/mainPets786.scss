@@ -46,6 +46,9 @@ $Georgia: Georgia, Verdana, sans-serif;
           column-gap: 4rem;
           overflow: hidden;
      }
+     .petsSlider__card:nth-child(n+7){
+          display: none;
+     }
      .pagination {
           position: relative;
           top: 3px;

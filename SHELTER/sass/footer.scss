@@ -32,11 +32,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    &.contacts {
+    & .contacts {
         row-gap: 4.3rem;
     }
-    &.location {
-        width: 30.2rem;//Может лучше убрать ширину блока...Нигде больше не задано
+    & .location {
         row-gap: 3.3rem;
     }
 }

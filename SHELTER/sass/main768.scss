@@ -131,21 +131,27 @@ $Georgia: Georgia, Verdana, sans-serif;
     }
     .footer__wrapper {
         align-items: flex-start;
-        background: radial-gradient(110.67% 538.64% at 5.73% 50%,
-         #513d2f 0%, #1a1a1c 100%), #211f20;
+        background:url(/rahunak-JSFE2022Q1/SHELTER/assets/images/noise_transparent@2x.png),
+         radial-gradient(110.67% 538.64% at 5.73% 50%,
+        #513d2f 0%, #1a1a1c 100%), #211f20;
     }
     .footer__content {
         height: 23.4rem;
         width: 70.8rem;
         position: relative;
-        top: 3rem;
-        justify-content: center;
+        left:-5px;
+        justify-content: space-between;
         column-gap: 6rem;
+    }
+    .contacts{
+        row-gap: 4.5rem;
+    }
+    .location{
+        row-gap: 3.3rem;
     }
     .footer__img {
         position: absolute;
-        left: 20.3rem;
-        top: 29.9rem;
+        bottom: 0;
     }
     .infoBlock {
         top: 0;
