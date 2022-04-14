@@ -9,7 +9,6 @@
     position: relative;
     bottom: 0;
     top: 0.1rem;
-    // width: 128rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -31,18 +30,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.contacts {
 
-    & .contacts {
-        row-gap: 4.3rem;
-    }
-    & .location {
-        row-gap: 3.3rem;
-    }
+    row-gap: 4.3rem;
+    
+}
+.location {
+    left:-4px;
+    row-gap: 3.3rem;
+    align-items: flex-start;
 }
 .infoBlock__link {
     display: flex;
-    column-gap: 2rem;
+    justify-content: flex-start;
     align-items: center;
+    column-gap: 2rem;
     color: rgba(241, 205, 179, 1);
 }
 .infoBlock_h3 {

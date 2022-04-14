@@ -46,7 +46,7 @@ $Georgia: Georgia, Verdana, sans-serif;
           column-gap: 4rem;
           overflow: hidden;
      }
-     .petsSlider__card:nth-child(n+7){
+     .petsSlider__card:nth-child(n + 7) {
           display: none;
      }
      .pagination {
@@ -54,30 +54,5 @@ $Georgia: Georgia, Verdana, sans-serif;
           top: 3px;
           left: 0;
      }
-     /*  footer  */
-     .footer {
-          min-height: 63.9rem;
-          min-width: 76.8rem;
-          // background-color: deeppink;
-     }
-     .footer__wrapper {
-          align-items: flex-start;
-          background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
-     }
-     .footer__content {
-          height: 23.4rem;
-          width: 70.8rem;
-          position: relative;
-          top: 3rem;
-          justify-content: center;
-          column-gap: 6rem;
-     }
-     .footer__img {
-          position: absolute;
-          left: 20.3rem;
-          top: 29.9rem;
-     }
-     .infoBlock {
-          top: 0;
-     }
+
 }

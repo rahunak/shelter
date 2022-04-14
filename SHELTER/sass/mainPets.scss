@@ -53,6 +53,7 @@ html{
 }
 .friendsPetsPage__h3 {
     color: rgba(84, 84, 84, 1);
+    text-align: center;
 }
 .petsSlider {
     display: flex;
@@ -95,51 +96,7 @@ html{
     width: 187px;
     margin-bottom: 3rem;
 }
-%button__paginator {
-    width: 5.2rem;
-    height: 5.2rem;
-    border-radius: 10rem;
-}
-.button__paginator {
-    @extend %button__paginator;
-}
-.button__paginator_disabled {
-    @extend %button__paginator;
-    border: 2px solid #cdcdcd;
-    background-color: transparent;
 
-    color: #292929;
-}
-
-.button__paginator_info {
-    @extend %button__paginator;
-    background-color: #f1cdb3;
-    border: 2px solid #f1cdb3;
-    color: #292929;
-}
-.button__paginator_active {
-    @extend %button__paginator;
-    border: 2px solid #f1cdb3;
-    background-color: transparent;
-    color: #292929;
-    &:hover {
-        cursor: pointer;
-        background-color: #f1cdb3;
-    }
-}
-.button__paginator_h4 {
-    //styleName: h4;
-    font-family: $Georgia;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 2.3rem;
-    letter-spacing: 0.06em;
-    text-align: center;
-}
-.pagination {
-    display: flex;
-    column-gap: 2rem;
-}
 .footer{
     position: relative;
     top:-1px;
