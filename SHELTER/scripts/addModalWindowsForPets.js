@@ -4,14 +4,17 @@ import "../sass/modal"
 */
 
 console.log("скрипт модалек подключен")
-
-document.querySelectorAll(".petsSlider__btn").forEach(el => el.addEventListener("click", showModalWindow));
+updateLinks();
+function updateLinks(){
+    document.querySelectorAll(".petsSlider__btn").forEach(el => el.addEventListener("click", showModalWindow));
 document.querySelectorAll(".card__button").forEach(el => el.addEventListener("click", showModalWindow));
+}
+
 
 function showModalWindow(event) {
 
     let name = event.currentTarget.previousElementSibling.textContent.toUpperCase();
-    let petObj = info.find(el => el.name.toUpperCase() === name);
+    let petObj = infoAboutPets.find(el => el.name.toUpperCase() === name);
     let modal = document.createElement("div");
     modal.style.top = window.pageYOffset + "px";
     modal.style.left = 0 + "px";

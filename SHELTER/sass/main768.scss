@@ -1,12 +1,14 @@
 $Georgia: Georgia, Verdana, sans-serif;
 @media (min-width: 768px) and (max-width: 1279px) {
+
     /* startScreen*/
     #burger__toggle {
         display: none;
     }
     .startScreen {
         min-height: 116.5rem;
-        min-width: 76.8rem;
+     
+        width: 100%;
     }
     .startScreen__wrapper {
         display: flex;
@@ -45,7 +47,8 @@ $Georgia: Georgia, Verdana, sans-serif;
 
     .aboutShelter {
         min-height: 104.8rem;
-        min-width: 76.8rem;
+      
+        width: 100%;
     }
     .aboutShelter__wrapper {
         width: 100%;
@@ -73,7 +76,8 @@ $Georgia: Georgia, Verdana, sans-serif;
 
     .ourFriends {
         min-height: 87.7rem;
-        min-width: 76.8rem;
+     
+        width: 100%;
     }
     .slider {
         position: relative;
@@ -91,7 +95,8 @@ $Georgia: Georgia, Verdana, sans-serif;
 
     .help {
         min-height: 77.9rem;
-        min-width: 76.8rem;
+
+        width: 100%;
     }
     .help__content {
         height: 59.9rem;
@@ -109,7 +114,8 @@ $Georgia: Georgia, Verdana, sans-serif;
 
     .donation {
         min-height: 78.2rem;
-        min-width: 76.8rem;
+
+        width: 100%;
     }
     .donation__content {
         height: 60.1rem;
@@ -124,7 +130,8 @@ $Georgia: Georgia, Verdana, sans-serif;
 
     .footer {
         min-height: 63.9rem;
-        min-width: 76.8rem;
+
+        width: 100%;
     }
     .footer__wrapper {
         justify-content: center;
@@ -147,13 +154,12 @@ $Georgia: Georgia, Verdana, sans-serif;
         justify-self: center;
         left: 50%;
         transform: translateX(-50%);
-       
     }
     .infoBlock {
         top: 0;
     }
-.contacts{
-    position: relative;
-    left: -4px;
-}
+    .contacts {
+        position: relative;
+        left: -4px;
+    }
 }

@@ -57,6 +57,10 @@ $Arial: Arial, Verdana, sans-serif;
     min-height: 48px;
     border-radius: 100px;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;/* user-select -- это нестандартное свойство */
+    -moz-user-select: none;    /* поэтому нужны префиксы */
+    -ms-user-select: none;
     &:hover {
         background-color: rgba(241, 205, 179, 1);
         

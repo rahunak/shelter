@@ -1,6 +1,6 @@
 
 console.log("данные для pets подключены")
-let info=[
+let infoAboutPets=[
     {
       "name": "Jennifer",
       "img": "/rahunak-JSFE2022Q1/SHELTER/assets/images/pets-jennifer.png",
