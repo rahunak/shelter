@@ -1,51 +1,70 @@
-
-
 let sliderBlock = document.querySelector(".cards");
+let countCardsInSlider;
+window.addEventListener("load", () => {
+    computeDependencies();
+    justAddAfterNewSlider();
+});
 
-let countCardsInSlider = document.querySelectorAll(".slider__card").length;
-console.log("кол-во карт в слайдере", countCardsInSlider.length);
-console.log("childNodes", sliderBlock.querySelectorAll("div").length)
+window.addEventListener("resize",()=>{
+   
+    if(computeDependencies()){
+        justAddAfterNewSlider();
+    }
+})
+
 document.querySelectorAll(".buttonArrow").forEach(el => el.addEventListener("click", showNextCards));
 
 function showNextCards(event) {
-    console.log("Math.random() ", Math.floor(Math.random() * 9))
+    sliderBlock = document.querySelector(".cards");
     let direction = event.target.closest('div').classList[1];
-    let cards = document.querySelectorAll(".cards .slider__card");
-
-    let leftRemoveCard = cards[0]
-    let rightRemoveCard = cards[cards.length - 1];
-    let newSlider=createNewSlider();
+    let newSlider = createNewSlider();
     if (direction === "slider__control_right") {
-        
-        newSlider.classList.add("move-to-left");
+
         sliderBlock.after(newSlider);
     } else {
-        newSlider.classList.add("move-to-right");
-        sliderBlock.before(createNewSlider());
+
+        sliderBlock.before(newSlider);
     }
     sliderBlock.remove();
     updateLinks();
-    sliderBlock = document.querySelector(".cards");
-
-
 }
+function justAddAfterNewSlider() {
+    sliderBlock = document.querySelector(".cards");
+    sliderBlock.after(createNewSlider());
 
+    sliderBlock.remove();
+    updateLinks();
+}
+function computeDependencies() {
+    let widthScreen = document.documentElement.clientWidth;
+    let isChangeScreen=countCardsInSlider;
+    if (widthScreen >= 1280) {
+        countCardsInSlider = 3;
+    }
+    else if (widthScreen < 1280 && widthScreen >= 768) {
+        countCardsInSlider = 2;
+    }
+    else if (widthScreen < 768) {
+        countCardsInSlider = 1;
+    }
+    return (isChangeScreen===countCardsInSlider)?false:true;
+}
 function createNewSlider() {
     let newSliderBlock = document.createElement("div");
     newSliderBlock.classList.add("cards");
+
     while (newSliderBlock.querySelectorAll(".slider__card").length < countCardsInSlider) {
         //проверка на уникальность 
-
         let newCard = createCard(Math.floor(Math.random() * 8))
-        
-        if(unicCheck(newCard, sliderBlock)){
+        if (unicCheck(newCard, sliderBlock)) {
             //Проверка на совпадения с прошлым слайдером
-            if(unicCheck(newCard, newSliderBlock)){
-                 //Проверка на дублирование втекущем слайдере
+            if (unicCheck(newCard, newSliderBlock)) {
+                //Проверка на дублирование втекущем слайдере
                 newSliderBlock.append(newCard);
-            }  
+            }
         }
     }
+
     return newSliderBlock;
 }
 
