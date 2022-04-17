@@ -83,12 +83,15 @@ $Georgia: Georgia, Verdana, sans-serif;
         position: relative;
         top: -1px;
     }
-    // .slider__card:last-child {
-    //     display: none;
-    // }
+    .slider__card:nth-child(n+3) {
+        display: none;
+    }
     .cards {
         width: 58rem;
         margin: 0 1.2rem;
+    }
+    .cards__container{
+        width: 58rem;
     }
 
     /*.help*/

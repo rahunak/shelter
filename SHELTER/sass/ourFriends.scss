@@ -1,7 +1,7 @@
 @import "buttons";
 $Georgia: Georgia, Verdana, sans-serif;
 $Arial: Arial, Verdana, sans-serif;
-.ourFriends{
+.ourFriends {
     height: 87.6rem;
     width: 100%;
 }
@@ -39,14 +39,25 @@ $Arial: Arial, Verdana, sans-serif;
     // min-width: 120rem;
     display: flex;
     align-items: center;
-    justify-content: center;//last change
+    justify-content: center; //last change
 }
 .cards {
+    width: 99rem;
+    height: 43.5rem;
+    margin: 0 5.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.9rem;
+    position: relative;
+    overflow: hidden;
+}
+.cards__container {
+    border-radius: 0.9rem;
     width: 99rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5.3rem;
 }
 .slider__card {
     height: 43.5rem;
@@ -65,7 +76,6 @@ $Arial: Arial, Verdana, sans-serif;
             background-color: #f1cdb3;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-
         }
     }
 }
@@ -82,7 +92,6 @@ $Arial: Arial, Verdana, sans-serif;
     text-align: center;
     text-transform: capitalize;
     color: rgba(84, 84, 84, 1);
-
 }
 
 .card__button {
@@ -90,4 +99,3 @@ $Arial: Arial, Verdana, sans-serif;
     width: 18.7rem;
     margin-bottom: 30px;
 }
-
