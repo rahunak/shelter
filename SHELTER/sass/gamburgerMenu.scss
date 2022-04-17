@@ -1,0 +1,123 @@
+  /* Бургер - вынести в отдельный файл*/
+  .navigation {
+    opacity: 1;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+.navigation__li:not(:first-child){
+    padding: 0;
+}
+#burger__toggle {
+    position: absolute;
+    opacity: 0;
+    z-index: -1000;
+}
+.burger__btn {
+    position: relative;
+    z-index: 1000;
+}
+// #burger__toggle:checked ~ .burger__btn {
+//     // transition-duration: 0.25s;
+//     // transform: rotate(90deg);
+//     animation-name: example;
+//     animation-duration: 4s;
+// }
+.forward{
+  animation-duration: 0.25s;
+    animation-fill-mode:forwards;
+    -webkit-animation-name: forward; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.25s; /* Safari 4.0 - 8.0 */
+    animation-name: forward;
+}
+.aback{
+    animation-name: aback;
+    animation-duration: 0.25s;
+    animation-direction: reverse;
+    animation-fill-mode:forwards;
+    -webkit-animation-name: aback; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.25s; /* Safari 4.0 - 8.0 */
+
+}
+  @keyframes forward {
+    from {transform:rotate(0deg)}
+    to {transform:rotate(90deg)}
+  }
+  @keyframes aback {
+    from {transform:rotate(0deg)}
+    to {transform:rotate(90deg)}
+  }
+ 
+// #burger__toggle:checked ~ .navigation {
+//     opacity: 1;
+// }
+// #burger__toggle:checked ~ .burger__background {
+//     right: 0 !important;
+// }
+// #burger__toggle:checked ~ .darkenAllPage {
+//     right: 0 !important;
+// }
+
+    .toggleNavigation {
+        opacity: 1;
+    }
+    .toggleBurger__background {
+        right: 0 !important;
+    }
+    .toggleDarkenAllPage {
+        right: 0 !important;
+    } 
+
+.burger__background {
+  
+    position: fixed;
+    top: 0;
+    right: -32rem;
+    width: 32rem;
+    height: 100%;
+    background-color: #292929;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    transition-duration: 0.3s;
+   
+}
+.darkenAllPage{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    transition-duration: 0.3s;
+    background-color: rgba(41, 41, 41, 0.6);
+}
+.burger__btn {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+    & > span::before,
+    & > span,
+    & > span::after {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #f1cdb3;
+    }
+    & > span::before {
+        content: "";
+        top: -10px;
+    }
+    & > span::after {
+        content: "";
+        top: 8px;
+    }
+}
+
+/* end burger*/

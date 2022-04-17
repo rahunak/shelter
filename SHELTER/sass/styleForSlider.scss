@@ -1,0 +1,47 @@
+.nextLeftSlider{
+
+    position: absolute;
+    left: 100%;
+   
+}
+.nextRightSlider{
+
+    position: absolute;
+    left: -100%;
+   
+}
+.toLeft {
+    animation-name: toLeft;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.toRight {
+    animation-name: toRight;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+// .cards{
+//  border: 2px solid palevioletred;
+// }
+
+@keyframes toLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
