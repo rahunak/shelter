@@ -3,10 +3,10 @@ import "../sass/modal"
 Сделать ленивую подгрузку сss для окна и самого окна
 */
 
-console.log("скрипт модалек подключен")
+
 updateLinks();
 function updateLinks(){
-    document.querySelectorAll(".petsSlider__btn").forEach(el => el.addEventListener("click", showModalWindow));
+document.querySelectorAll(".petsSlider__btn").forEach(el => el.addEventListener("click", showModalWindow));
 document.querySelectorAll(".card__button").forEach(el => el.addEventListener("click", showModalWindow));
 }
 
@@ -28,17 +28,18 @@ function showModalWindow(event) {
         <h5 class="modalWindow__h5">${petObj.description}</h5>
         
         <ul  class="modalWindow__ul">
-            <li class="modalWindow__li">
-                <h5 class="modalWindow__h5_bold">Age:<span>${petObj.age}</span></h5>
+            <li class="modalWindow__li"><span class="modalWindow__circle"></span> 
+                <h5 class="modalWindow__h5_bold">Age: <span>${petObj.age}</span></h5>
             </li>
-            <li class="modalWindow__li">
+            <li class="modalWindow__li"><span class="modalWindow__circle"></span> 
                 <h5 class="modalWindow__h5_bold">Inoculations:<span> ${petObj.inoculations}</span></h5>
             </li>
-            <li class="modalWindow__li">
+            <li class="modalWindow__li"><span class="modalWindow__circle"></span> 
                 <h5 class="modalWindow__h5_bold">Diseases:<span> ${petObj.diseases}</span></h5>
             </li>
             <li class="modalWindow__li">
-                <h5 class="modalWindow__h5_bold">Parasites:<span> ${petObj.parasites}</span></h5>
+               <span class="modalWindow__circle"></span> 
+               <h5 class="modalWindow__h5_bold">Parasites:<span> ${petObj.parasites}</span></h5>
             </li>
         </ul>
     </div>

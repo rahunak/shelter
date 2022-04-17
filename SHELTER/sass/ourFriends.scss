@@ -42,24 +42,29 @@ $Arial: Arial, Verdana, sans-serif;
     justify-content: center; //last change
 }
 .cards {
-    width: 99rem;
-    height: 43.5rem;
-    margin: 0 5.3rem;
+    width: 109.6rem;
+    height: 50.5rem;
+    // margin: 0 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.9rem;
     position: relative;
     overflow: hidden;
+    
 }
 .cards__container {
     border-radius: 0.9rem;
     width: 99rem;
+    padding: 0 5.3rem;
+// height: 50.5rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .slider__card {
+    z-index: 220;
     height: 43.5rem;
     width: 27rem;
     border-radius: 0.9rem;
@@ -68,10 +73,12 @@ $Arial: Arial, Verdana, sans-serif;
     justify-content: space-between;
     align-items: center;
     background-color: #fafafa;
-    // background-color: red;
+
+    
     &:hover {
         box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
         cursor: pointer;
+        
         .button__secondary {
             background-color: #f1cdb3;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
