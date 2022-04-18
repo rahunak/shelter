@@ -47,7 +47,7 @@ $Arial: Arial, Verdana, sans-serif;
     border-radius: 9px;
     // background-color: red;
 }
-// .cashCard__link { }
+
 .cashCard__image {
     padding-right:1.5rem;
     max-width: 100%;
@@ -55,6 +55,7 @@ $Arial: Arial, Verdana, sans-serif;
 }
 .cashCard__h4 {
     color: rgba(84, 84, 84, 1);
+    white-space: nowrap;
 }
 .donation__p {
     font-family: $Arial;
