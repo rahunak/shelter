@@ -91,7 +91,7 @@ $Arial: Arial, Verdana, sans-serif;
     @extend %button__paginator;
 }
 .button__paginator_disabled {
-    @extend %button__paginator;
+    
     border: 2px solid #cdcdcd;
     background-color: transparent;
 
@@ -105,7 +105,7 @@ $Arial: Arial, Verdana, sans-serif;
     color: #292929;
 }
 .button__paginator_active {
-    @extend %button__paginator;
+    
     border: 2px solid #f1cdb3;
     background-color: transparent;
     color: #292929;

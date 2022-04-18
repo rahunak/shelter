@@ -5,7 +5,7 @@ html {
 body {
   font-size: 1.6rem;
 }
-.modalWindow {
+.modalWindow__background {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -16,14 +16,17 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  
 }
-
+.modalWindow{
+  position: relative;
+}
 .modalWindow__btn_close {
   width: 5.2rem;
   height: 5.2rem;
   position: relative;
   top: -55.2rem;
-  left: 46.6rem;
+  left: 89rem;
   color: #000000;
   background-color: #757575;
   border: 0.2rem solid #f1cdb3;
@@ -42,7 +45,7 @@ body {
 .modalWindow__wrapper {
   z-index: 20;
   position: relative;
-  height: 50rem;
+  min-height: 50rem;
   width: 90rem;
   border-radius: 0.9rem;
   background: #fafafa;
@@ -62,7 +65,6 @@ body {
   align-items: flex-start;
   margin-left: 3rem;
   margin-top: 5rem;
-  height: 36.2rem;
   width: 35.1rem;
 }
 .modalWindow__h3 {
@@ -72,7 +74,6 @@ body {
   font-weight: 400;
   line-height: 4.5rem;
   letter-spacing: 0.06em;
-
 }
 .modalWindow__h4 {
   margin-top: 1rem;
@@ -81,7 +82,6 @@ body {
   font-weight: 400;
   line-height: 2.3rem;
   letter-spacing: 0.06em;
- 
 }
 .modalWindow__h5 {
   margin: 4rem 0;
@@ -90,7 +90,7 @@ body {
   font-weight: 400;
   line-height: 1.7rem;
   letter-spacing: 0.06em;
-
+text-align: left;
   color: #000000;
 }
 .modalWindow__h5_bold {
@@ -137,9 +137,9 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-  /* modalWindow */
+
   .modalWindow__wrapper {
-    height: 35rem;
+    min-height: 35rem;
     width: 63rem;
   }
   .modalWindow__img {
@@ -156,7 +156,7 @@ body {
     font-weight: 400;
     line-height: 1.4rem;
     letter-spacing: 0.06em;
-
+    text-align: left;
     word-wrap: break-word;
   }
   .modalWindow__h5_bold {
@@ -173,45 +173,56 @@ body {
       font-weight: 400;
       line-height: 1.7rem;
       letter-spacing: 0.06em;
- 
     }
   }
 
   .modalWindow__btn_close {
     top: -40.2rem;
-    left: 33.2rem;
+    left: 62.1rem;
   }
   .modalWindow__ul {
     row-gap: 0.6rem;
   }
 }
 @media (max-width: 768px) {
+
   .modalWindow__wrapper {
-    height: 34.1rem;
-    width: 24rem;
+    min-height: 32.1rem;
+    
+    width: 22rem;
     border-radius: 9px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+   
+    padding: 1rem;
   }
   .modalWindow__img {
     display: none;
   }
   .modalWindow__description {
     margin: 0;
-    padding: 0;
-    height: 32.1rem;
-    width: 22rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
-  .modalWindow__btn_close{
-    top:0;
-    left: 0;
+  .modalWindow__ul {
+    row-gap: 0.5rem;
+    align-self: flex-start;
   }
-  .modalWindow__h5{
+  .modalWindow__h5 {
     margin: 2rem 0 2.4rem 0;
+    font-family: Georgia;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    letter-spacing: 0.06em;
+    text-align: justify;
+  }
+  .modalWindow__btn_close {
+    position: absolute;
+    top:-5.2rem;
+    left: 21.8rem;
   }
 }

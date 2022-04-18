@@ -60,10 +60,10 @@ $Arial: Arial, Verdana, sans-serif;
         letter-spacing: 0.06em;
         text-align: center;
     }
-    .petsSlider {
+    .petPaginator {
         flex-direction: column;
     }
-    .petsSlider__card:nth-child(n + 4) {
+    .petPaginator__card:nth-child(n + 4) {
         display: none;
     }
     .pagination {

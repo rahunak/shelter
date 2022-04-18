@@ -1,0 +1,36 @@
+.nextLeftSlider{
+
+    position: absolute;
+    left: 100%;
+   
+}
+.hideAll {
+    animation-name: hideAll;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.showall {
+    animation-name: hideAll;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideAll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes showAll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

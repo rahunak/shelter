@@ -38,7 +38,7 @@ $Georgia: Georgia, Verdana, sans-serif;
           width: 70.8rem;
           align-items: center;
      }
-     .petsSlider {
+     .petPaginator {
           position: relative;
           left: -1px;
           top: -0.3rem;
@@ -47,7 +47,7 @@ $Georgia: Georgia, Verdana, sans-serif;
           column-gap: 4rem;
           overflow: hidden;
      }
-     .petsSlider__card:nth-child(n + 7) {
+     .petPaginator__card:nth-child(n + 7) {
           display: none;
      }
      .pagination {

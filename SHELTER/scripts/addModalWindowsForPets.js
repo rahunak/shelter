@@ -16,11 +16,12 @@ function showModalWindow(event) {
     let name = event.currentTarget.previousElementSibling.textContent.toUpperCase();
     let petObj = infoAboutPets.find(el => el.name.toUpperCase() === name);
     let modal = document.createElement("div");
-    modal.style.top = window.pageYOffset + "px";
-    modal.style.left = 0 + "px";
+    modal.classList.add("modalWindow__background")
+    // modal.style.top = window.pageYOffset + "px";
+    // modal.style.left = 0 + "px";
     modal.insertAdjacentHTML("afterbegin",
         `<div class="modalWindow">
-<div class="wrapper modalWindow__wrapper">
+<div class=" modalWindow__wrapper">
     <img src="${petObj.img}" alt="${petObj.alt}" class="modalWindow__img"/>
     <div class="modalWindow__description">
         <h3 class="modalWindow__h3">${petObj.name}</h3>
@@ -51,12 +52,12 @@ function showModalWindow(event) {
 </div>
 `);
     document.body.prepend(modal);
-    document.querySelector(".modalWindow").addEventListener("click", hideModalSecondMethod);
+    document.querySelector(".modalWindow__background").addEventListener("click", hideModalSecondMethod);
     document.querySelector(".modalWindow__btn_close").addEventListener("click", hideModalWindow);
 }
 
 function hideModalWindow() {
-    document.querySelector(".modalWindow").remove();
+    document.querySelector(".modalWindow__background").remove();
 }
 function hideModalSecondMethod(event) {
 
