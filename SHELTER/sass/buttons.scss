@@ -86,17 +86,14 @@ $Arial: Arial, Verdana, sans-serif;
     width: 5.2rem;
     height: 5.2rem;
     border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 .button__paginator {
     @extend %button__paginator;
 }
-.button__paginator_disabled {
-    
-    border: 2px solid #cdcdcd;
-    background-color: transparent;
 
-    color: #292929;
-}
 
 .button__paginator_info {
     @extend %button__paginator;
@@ -105,7 +102,6 @@ $Arial: Arial, Verdana, sans-serif;
     color: #292929;
 }
 .button__paginator_active {
-    
     border: 2px solid #f1cdb3;
     background-color: transparent;
     color: #292929;
@@ -113,6 +109,12 @@ $Arial: Arial, Verdana, sans-serif;
         cursor: pointer;
         background-color: #f1cdb3;
     }
+}
+.button__paginator_disabled {
+    border: 2px solid #cdcdcd;
+    background-color: transparent;
+    color: #292929;
+//Закрасить кнопки влево
 }
 .button__paginator_h4 {
     //styleName: h4;
