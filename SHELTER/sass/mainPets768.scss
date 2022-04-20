@@ -39,6 +39,7 @@ $Georgia: Georgia, Verdana, sans-serif;
           margin-top: 9rem;
           height: 157.3rem;
           width: 70.8rem;
+          width: 100%;
           align-items: center;
      }
      .petPaginator {
@@ -46,6 +47,9 @@ $Georgia: Georgia, Verdana, sans-serif;
           left: -1px;
           top: -0.3rem;
           width: 58rem;
+          // width: 63rem;
+          padding: 2.5rem;
+
           height: 136.5rem;
           column-gap: 4rem;
           overflow: hidden;

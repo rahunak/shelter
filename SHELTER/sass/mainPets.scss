@@ -8,10 +8,11 @@ html{
     background: rgba(255, 255, 255, 1);
     position: sticky;
     top:0;
-    z-index: 1000;
+    z-index: 999;
 }
 .petsHeader__wrapper{
     align-items: center;
+    z-index: 998;
 }
 .logo__h1 {
     color: rgba(84, 84, 84, 1);
@@ -72,7 +73,6 @@ html{
     background: #ffffff;
     &:hover {
         box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-
         button{
             background-color: #f1cdb3;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -80,17 +80,7 @@ html{
     }
 }
 
-.petPaginator__p {
-    text-align: center;
-    text-transform: capitalize;
-    font-family: $Georgia;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 2.3rem;
-    letter-spacing: 0.06em;
-    color: rgba(84, 84, 84, 1);
 
-}
 .petPaginator__btn {
     height: 52px;
     width: 187px;

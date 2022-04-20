@@ -7,17 +7,18 @@
 .hideAll {
     animation-name: hideAll;
     animation-timing-function: ease-in-out;
-    animation-duration: 1s;
+    animation-duration: 0.25s;
     animation-fill-mode: forwards;
 }
 .showAll {
-    animation-name: hideAll;
+    animation-name: showAll;
     animation-timing-function: ease-in-out;
-    animation-duration: 1s;
-    animation-direction: reverse;
+    animation-duration: 0.25s;
     animation-fill-mode: forwards;
 }
-
+.activateBtn{
+    transform: scale(-1,1);
+}
 @keyframes hideAll {
     0% {
         opacity: 1;
@@ -28,9 +29,9 @@
 }
 @keyframes showAll {
     0% {
-        opacity: 1;
+        opacity: 0;
     }
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 }

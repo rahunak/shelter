@@ -5,15 +5,13 @@ import "../sass/modal"
 
 
 updateLinks();
-function updateLinks(){
-document.querySelectorAll(".petsSlider__btn").forEach(el => el.addEventListener("click", showModalWindow));
-document.querySelectorAll(".card__button").forEach(el => el.addEventListener("click", showModalWindow));
-}
+
 
 
 function showModalWindow(event) {
-
-    let name = event.currentTarget.previousElementSibling.textContent.toUpperCase();
+    console.log("event",event.currentTarget.children[1])
+    let name = event.currentTarget.children[1].textContent.toUpperCase();
+    console.log("name",name)
     let petObj = infoAboutPets.find(el => el.name.toUpperCase() === name);
     let modal = document.createElement("div");
     modal.classList.add("modalWindow__background")

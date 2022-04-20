@@ -22,6 +22,7 @@ body {
   position: relative;
 }
 .modalWindow__btn_close {
+  z-index: 1000;
   width: 5.2rem;
   height: 5.2rem;
   position: relative;
