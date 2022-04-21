@@ -6,7 +6,6 @@ document.querySelector(".burger__btn").addEventListener("click",
     (event) => {
         isActive = !isActive;
         isActive ? showMenu() : hideMenu();
-        
         document.body.addEventListener("click", isNeedClosure);
         document.querySelectorAll(".navigation__link")
         .forEach(el =>{
@@ -24,13 +23,18 @@ function isNeedClosure(event) {
     }
 }
 function showMenu() {
+    document.body.classList.add("overflow_hiden");
+    document.body.classList.remove("overflow_hiden");
     document.querySelector(".burger__btn").classList.remove("aback");
     document.querySelector(".burger__btn").classList.add("forward");
     document.querySelector(".navigation").classList.add("toggleNavigation");
     document.querySelector(".burger__background").classList.add("toggleBurger__background");
     document.querySelector(".darkenAllPage").classList.add("toggleDarkenAllPage");
+    
 }
 function hideMenu() {
+    document.body.classList.add("overflow_visible");
+    document.body.classList.remove("overflow_hiden");
     document.querySelector(".burger__btn").classList.add("aback");
     document.querySelector(".burger__btn").classList.remove("forward");
     document.querySelector(".navigation").classList.remove("toggleNavigation");

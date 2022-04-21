@@ -1,6 +1,12 @@
 $Georgia: Georgia, Verdana, sans-serif;
 $Arial: Arial, Verdana, sans-serif;
 
+.overflow_hiden{
+    overflow: hidden;
+}
+.overflow_visible{
+    overflow: visible;
+}
 @media (min-width: 320px) and (max-width: 767.98px) {
     @import "footer";
     @import "main320";
@@ -34,6 +40,7 @@ $Arial: Arial, Verdana, sans-serif;
     }
     .burger__background {
         background-color: rgba(246, 246, 246, 1);
+     
     }
 
     .friendsPetsPage {
