@@ -141,7 +141,7 @@ function createPetPaginatorCard(data) {
   newCard.insertAdjacentHTML("afterbegin", `
   <img src="${data.img}" class="petPaginator__img"
   alt="${data.type} - ${data.breed}">
-<p class="petPaginator__p">${data.name}</p>
+<p class="card__p">${data.name}</p>
 <button class="button__secondary petPaginator__btn ">Learn more</button>
 `);
   return newCard;

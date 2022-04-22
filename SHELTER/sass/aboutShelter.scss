@@ -27,7 +27,7 @@ $Arial: Arial, Verdana, sans-serif;
 
 .aboutShelter__description {
     height: 38rem;
-    width: 43rem;
+    max-width: 43rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
