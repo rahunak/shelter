@@ -14,17 +14,20 @@ $Arial: Arial, Verdana, sans-serif;
     font-weight: 400;
     font-size: 17px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .button__primary {
     @extend %button__primary-shared;
     background-color: #f1cdb3;
     color: #292929;
+    transition: 0.2s;
 }
 .button__secondary {
     @extend %button__primary-shared;
     background: transparent;
     color: #292929;
+    transition: 0.2s;
 }
 .startScreen__button {
     @extend %button__primary-shared;
@@ -61,6 +64,7 @@ $Arial: Arial, Verdana, sans-serif;
     -webkit-user-select: none;/* user-select -- это нестандартное свойство */
     -moz-user-select: none;    /* поэтому нужны префиксы */
     -ms-user-select: none;
+    transition: 0.2s;
     &:hover {
         background-color: rgba(241, 205, 179, 1);
         
@@ -80,6 +84,7 @@ $Arial: Arial, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
+    transition: 0.2s;
 }
 
 %button__paginator {
@@ -88,7 +93,8 @@ $Arial: Arial, Verdana, sans-serif;
     border-radius: 10rem;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    transition: 0.2s;
 }
 .button__paginator {
     @extend %button__paginator;
@@ -100,6 +106,7 @@ $Arial: Arial, Verdana, sans-serif;
     background-color: #f1cdb3;
     border: 2px solid #f1cdb3;
     color: #292929;
+    transition: 0.2s;
 }
 .button__paginator_active {
     border: 2px solid #f1cdb3;
@@ -114,6 +121,7 @@ $Arial: Arial, Verdana, sans-serif;
     border: 2px solid #cdcdcd;
     background-color: transparent;
     color: #292929;
+    transition: 0.2s;
 //Закрасить кнопки влево
 }
 .button__paginator_h4 {
@@ -124,4 +132,5 @@ $Arial: Arial, Verdana, sans-serif;
     line-height: 2.3rem;
     letter-spacing: 0.06em;
     text-align: center;
+    transition: 0.2s;
 }

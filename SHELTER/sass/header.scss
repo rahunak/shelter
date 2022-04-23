@@ -73,6 +73,7 @@ $color-primary: #f1cdb3;
     font-size: 1.5rem;
     line-height: 160%;
     color: #cdcdcd; /* color-dark-s */
+    transition: 0.2s;
     &:hover{
         color:#FAFAFA;
     }
