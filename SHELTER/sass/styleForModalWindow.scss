@@ -45,7 +45,7 @@ body {
   height: 50rem;
   &:hover {
     .modalWindow__btn_close {
-      background-color: #f1cdb3;
+      background-color: #757575;
       transition: 0.25s;
     }
   }
@@ -69,10 +69,11 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: #757575;
+  transition: 0.25s;
+  background-color: #f1cdb3;
   &:hover{
-    background-color: #f1cdb3;
-    transition: 0.25s;
+    background-color: #f1cdb3 !important;
+    
   }
   
 }
