@@ -18,7 +18,6 @@ document.querySelector(".burger__btn").addEventListener("click",
 
 function isNeedClosure(event) {
     if ((event.clientX < (document.documentElement.clientWidth - 320)) && isActive) {
-        console.log("hideMenu",)
         hideMenu();
     }
 }

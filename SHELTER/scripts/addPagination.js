@@ -18,12 +18,6 @@ window.addEventListener("load",()=>{
 window.addEventListener("resize", () => {
   computeDependenciesForPetsPage();
   if (isChangeDimentions()) {
-    console.log("размерность изменилась")
-    // let cardsOnPage = document.querySelectorAll(".petPaginator__card");
-    // cardsOnPage.forEach(el => el.remove());
-    // activePage=1;
-    // pasteCardsIn(activePage);
-    // updateLinks();
     getFirstPage();
   }
 
@@ -34,7 +28,7 @@ let showPrev = document.querySelector('[data-button-paginator="showPrevPage"]');
 let infoBtn = document.querySelector('.button__paginator_h4');
 let showNext = document.querySelector('[data-button-paginator="showNextPage"]');
 let showLast = document.querySelector('[data-button-paginator="showLastPage"]');
-
+getFirstPage();
 showLast.addEventListener("click", getLastPage);
 showFirst.addEventListener("click", getFirstPage);
 showPrev.addEventListener("click", showPrevPage);
@@ -155,11 +149,17 @@ function createPetPaginatorCard(data) {
 function getPage(numberPage = 1) {
 
   let cardsOnPage = document.querySelectorAll(".petPaginator__card");
-  cardsOnPage.forEach(el => el.classList.add("hideAll"));
+  // cardsOnPage.forEach(el => el.classList.add("hideAll"));
   cardsOnPage.forEach(el => el.classList.remove("showAll"));
+if(cardsOnPage.length==0){
+  pasteCardsIn(numberPage);
+  updateLinks();
+}else{
 
-
-
+  cardsOnPage.forEach(el => el.remove());
+  pasteCardsIn(numberPage);
+  updateLinks();
+}
   window.addEventListener("animationend", function (event) {
     cardsOnPage = document.querySelectorAll(".petPaginator__card");
     if (event.animationName == "hideAll") {

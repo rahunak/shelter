@@ -1,5 +1,5 @@
 
-console.log("данные для pets подключены")
+
 let infoAboutPets=[
     {
       "name": "Jennifer",
