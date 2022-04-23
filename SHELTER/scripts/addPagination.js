@@ -11,34 +11,32 @@ let countPages;
 updateLinks();
 computeDependenciesForPetsPage();
 window.addEventListener("load",()=>{
-  let cardsOnPage = document.querySelectorAll(".petPaginator__card");
-  cardsOnPage.forEach(el => el.remove());
-  pasteCardsIn(1);
-  updateLinks();
+  getFirstPage();
 })
 
 
 window.addEventListener("resize", () => {
   computeDependenciesForPetsPage();
   if (isChangeDimentions()) {
-    let cardsOnPage = document.querySelectorAll(".petPaginator__card");
-    cardsOnPage.forEach(el => el.remove());
-    pasteCardsIn(1);
-    updateLinks();
+    console.log("размерность изменилась")
+    // let cardsOnPage = document.querySelectorAll(".petPaginator__card");
+    // cardsOnPage.forEach(el => el.remove());
+    // activePage=1;
+    // pasteCardsIn(activePage);
+    // updateLinks();
+    getFirstPage();
   }
 
 });
 
 let showFirst = document.querySelector('[data-button-paginator="showFirstPage"]');
-
-showFirst.addEventListener("click", getFirstPage);
-
 let showPrev = document.querySelector('[data-button-paginator="showPrevPage"]');
 let infoBtn = document.querySelector('.button__paginator_h4');
 let showNext = document.querySelector('[data-button-paginator="showNextPage"]');
 let showLast = document.querySelector('[data-button-paginator="showLastPage"]');
-showLast.addEventListener("click", getLastPage);
 
+showLast.addEventListener("click", getLastPage);
+showFirst.addEventListener("click", getFirstPage);
 showPrev.addEventListener("click", showPrevPage);
 showNext.addEventListener("click", showNextPage);
 
@@ -176,9 +174,17 @@ function getPage(numberPage = 1) {
 }
 
 function pasteCardsIn(numberPage) {
-  for (let i = defaultCountCardsOnPage * (numberPage - 1); i < defaultCountCardsOnPage * numberPage; i++) {
+ try{
+ for (let i = defaultCountCardsOnPage * (numberPage - 1); i < defaultCountCardsOnPage * numberPage; i++) {
     petPaginator.prepend(createPetPaginatorCard(arr[i]));
   }
+ }catch(error){
+   throw()=>{
+     console.log("OOPPS!!!")
+   }
+
+ }
+ 
 }
 
 function isChangeDimentions() {
