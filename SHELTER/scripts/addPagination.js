@@ -10,6 +10,13 @@ let defaultCountCardsOnPage;
 let countPages;
 updateLinks();
 computeDependenciesForPetsPage();
+window.addEventListener("load",()=>{
+  let cardsOnPage = document.querySelectorAll(".petPaginator__card");
+  cardsOnPage.forEach(el => el.remove());
+  pasteCardsIn(1);
+  updateLinks();
+})
+
 
 window.addEventListener("resize", () => {
   computeDependenciesForPetsPage();
