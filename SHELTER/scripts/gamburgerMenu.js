@@ -23,6 +23,8 @@ function isNeedClosure(event) {
     }
 }
 function showMenu() {
+    document.body.style.overflow='hidden';
+    document.querySelector('.burger__background').style.overflow='visible';
     document.body.classList.add("overflow_hiden");
     document.body.classList.remove("overflow_hiden");
     document.querySelector(".burger__btn").classList.remove("aback");
@@ -33,6 +35,7 @@ function showMenu() {
     
 }
 function hideMenu() {
+    document.body.style.overflow='visible';
     document.body.classList.add("overflow_visible");
     document.body.classList.remove("overflow_hiden");
     document.querySelector(".burger__btn").classList.add("aback");
@@ -43,3 +46,7 @@ function hideMenu() {
     isActive = false;
 }
 
+document.querySelector(".navigation__link_active").addEventListener("click",turrnOffLink)
+function turrnOffLink(event){
+    event.preventDefault()
+}

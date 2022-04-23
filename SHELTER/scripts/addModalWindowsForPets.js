@@ -7,14 +7,13 @@ import "../sass/modal"
 updateLinks();
 
 
-
+let modal;
 function showModalWindow(event) {
-    console.log("event",event.currentTarget.children[1])
+    document.body.style.overflow = 'hidden';
     let name = event.currentTarget.children[1].textContent.toUpperCase();
-    console.log("name",name)
     let petObj = infoAboutPets.find(el => el.name.toUpperCase() === name);
-    let modal = document.createElement("div");
-    modal.classList.add("modalWindow__background")
+    modal = document.createElement("div");
+    modal.classList.add("modalWindow__background", "showModal_animation");
     // modal.style.top = window.pageYOffset + "px";
     // modal.style.left = 0 + "px";
     modal.insertAdjacentHTML("afterbegin",
@@ -50,19 +49,28 @@ function showModalWindow(event) {
 </div>
 `);
     document.body.prepend(modal);
-    document.querySelector(".modalWindow__background").addEventListener("click", hideModalSecondMethod);
+    document.querySelector(".modalWindow__background").addEventListener("click", clickOutsideModal);
     document.querySelector(".modalWindow__btn_close").addEventListener("click", hideModalWindow);
 }
 
 function hideModalWindow() {
-    document.querySelector(".modalWindow__background").remove();
+    document.body.style.overflow = 'visible';
+    let modal = document.querySelector(".modalWindow__background");
+    modal.classList.add("hideModal_animation");
+    modal.addEventListener("animationend", function removeAll() {
+        modal.remove("showModal_animation","hideModal_animation");
+        modal.removeEventListener("click", showModalWindow);
+        modal.removeEventListener("click", removeAll);
+        modal.remove();
+    })
+
+   
 }
-function hideModalSecondMethod(event) {
-
-    let modal= document.querySelector(".modalWindow__wrapper");
-    if(!modal)return;
-    let coordsModal=modal.getBoundingClientRect();
-
-    if(event.clientX<coordsModal.left || event.clientX>coordsModal.right 
-        || event.clientY<coordsModal.top || event.clientY>coordsModal.bottom) hideModalWindow();
+function clickOutsideModal(event) {
+    let modal = document.querySelector(".modalWindow__wrapper");
+    if (!modal) return;
+    let coordsModal = modal.getBoundingClientRect();
+    if (event.clientX < coordsModal.left || event.clientX > coordsModal.right
+        || event.clientY < coordsModal.top || event.clientY > coordsModal.bottom)
+        hideModalWindow();
 }
