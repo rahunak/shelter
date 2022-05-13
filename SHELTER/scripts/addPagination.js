@@ -83,27 +83,27 @@ function showNextPage() {
 function activateLastButtons() {
   activateButton(showNext);
   activateButton(showLast);
-  showNext.childNodes[1].setAttribute("src", "/rahunak-JSFE2022Q1/SHELTER/assets/icons/rightOne.svg");
+  showNext.childNodes[1].setAttribute("src", "../../assets/icons/rightOne.svg");
   showNext.childNodes[1].classList.remove("activateBtn");
-  showLast.childNodes[1].setAttribute("src", "/rahunak-JSFE2022Q1/SHELTER/assets/icons/rightDouble.svg");
+  showLast.childNodes[1].setAttribute("src", "../../assets/icons/rightDouble.svg");
   showLast.childNodes[1].classList.remove("activateBtn");
 }
 
 function blockLastButtons() {
   deactivateButton(showNext);
   deactivateButton(showLast);
-  showLast.childNodes[1].setAttribute("src", "/rahunak-JSFE2022Q1/SHELTER/assets/icons/leftDouble.svg");
+  showLast.childNodes[1].setAttribute("src", "../../assets/icons/leftDouble.svg");
   showLast.childNodes[1].classList.add("activateBtn");
-  showNext.childNodes[1].setAttribute("src", "/rahunak-JSFE2022Q1/SHELTER/assets/icons/leftOne.svg");
+  showNext.childNodes[1].setAttribute("src", "../../assets/icons/leftOne.svg");
   showNext.childNodes[1].classList.add("activateBtn");
 }
 
 function activateFirstButtons() {
   activateButton(showFirst);
   activateButton(showPrev);
-  showFirst.childNodes[1].setAttribute("src", "/rahunak-JSFE2022Q1/SHELTER/assets/icons/rightDouble.svg");
+  showFirst.childNodes[1].setAttribute("src", "../../assets/icons/rightDouble.svg");
   showFirst.childNodes[1].classList.add("activateBtn");
-  showPrev.childNodes[1].setAttribute("src", "/rahunak-JSFE2022Q1/SHELTER/assets/icons/rightOne.svg");
+  showPrev.childNodes[1].setAttribute("src", "../../assets/icons/rightOne.svg");
   showPrev.childNodes[1].classList.add("activateBtn");
 
 }
@@ -111,9 +111,9 @@ function activateFirstButtons() {
 function blockFirstButtons() {
   deactivateButton(showFirst);
   deactivateButton(showPrev);
-  showFirst.childNodes[1].setAttribute("src", "/rahunak-JSFE2022Q1/SHELTER/assets/icons/leftDouble.svg");
+  showFirst.childNodes[1].setAttribute("src", "../../assets/icons/leftDouble.svg");
   showFirst.childNodes[1].classList.remove("activateBtn");
-  showPrev.childNodes[1].setAttribute("src", "/rahunak-JSFE2022Q1/SHELTER/assets/icons/leftOne.svg");
+  showPrev.childNodes[1].setAttribute("src", "../../assets/icons/leftOne.svg");
   showPrev.childNodes[1].classList.remove("activateBtn");
 }
 
