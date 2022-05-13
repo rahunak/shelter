@@ -10,7 +10,7 @@ function changeLinks() {
             }
         });
 
-document.querySelector(".startScreen__button").setAttribute( 'href' , "/rahunak-JSFE2022Q1/SHELTER/pages/pets/pets.html");
+document.querySelector(".startScreen__button").setAttribute( 'href' , "/shelter/SHELTER/pages/pets/pets.html");
 
 
 
